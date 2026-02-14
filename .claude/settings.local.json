@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:kruxia-flow-companion.lovable.app)",
+      "WebFetch(domain:kruxiaflow.com)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

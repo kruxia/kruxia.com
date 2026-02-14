@@ -1,0 +1,212 @@
+/* Fonts loaded via index.html <link> for better performance */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Kruxia Brand System */
+    --background: 60 17% 97%;
+    --background-alt: 40 10% 94%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 240 27% 14%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 42 100% 45%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 40 10% 94%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 40 10% 88%;
+    --input: 40 10% 88%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom tokens */
+    --font-heading: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  .dark {
+    --background: 240 27% 8%;
+    --foreground: 0 0% 95%;
+    --card: 240 27% 12%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 27% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 240 27% 14%;
+    --secondary: 42 100% 45%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 240 20% 20%;
+    --muted-foreground: 220 9% 65%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 20% 20%;
+    --input: 240 20% 20%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(217 91% 60%), hsl(190 84% 50%));
+  }
+
+  .bg-dark-section {
+    background-color: hsl(240 27% 14%);
+    color: hsl(0 0% 100%);
+  }
+
+  .bg-light-section {
+    background: linear-gradient(to bottom, hsl(40 10% 94%), hsl(60 17% 97%));
+  }
+
+  .bg-alt-section {
+    background: linear-gradient(to bottom, hsl(40 10% 94%), hsl(60 17% 97%));
+  }
+
+  .bg-darkest-section {
+    background-color: hsl(240 27% 8%);
+    color: hsl(0 0% 100%);
+  }
+
+  .stat-number {
+    @apply text-4xl md:text-5xl font-extrabold;
+    color: hsl(160 84% 39%);
+    font-family: var(--font-heading);
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-6;
+  }
+
+  .container-narrow {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+/* Hero animations */
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes hero-float-delayed {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes orbit-spin-reverse {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbital-ring, .orbital-dot { animation: none; }
+}
+
+.animate-hero-float {
+  animation: hero-float 4s ease-in-out infinite;
+}
+.animate-hero-float-delayed {
+  animation: hero-float-delayed 4s ease-in-out 1.5s infinite;
+}
+.shimmer-bar {
+  background: linear-gradient(90deg, hsl(217 91% 60%), hsl(42 100% 45%), hsl(217 91% 60%));
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Orbital rings — centered in their container, which is 130% of the card */
+.orbital-ring {
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  margin: auto;
+}
+.orbital-ring-1 {
+  width: 90%;
+  height: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  animation: orbit-spin 30s linear infinite;
+}
+.orbital-ring-2 {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  animation: orbit-spin-reverse 45s linear infinite;
+}
+.orbital-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.orbital-dot-1 {
+  top: -4px;
+  left: 50%;
+  margin-left: -4px;
+  background: hsl(217 91% 60%);
+  box-shadow: 0 0 12px 2px hsla(217, 91%, 60%, 0.5);
+}
+.orbital-dot-2 {
+  bottom: -4px;
+  left: 50%;
+  margin-left: -4px;
+  background: hsl(42 100% 45%);
+  box-shadow: 0 0 12px 2px hsla(42, 100%, 45%, 0.5);
+}

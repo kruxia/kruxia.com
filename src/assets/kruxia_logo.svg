@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 294.64 288.43">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: TrebuchetMS-Bold, 'Trebuchet MS';
+        font-size: 335.56px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <path d="M285.05,144.74v140.98H3.08V144.74m281.96,0C285.05,66.87,221.93,3.75,144.07,3.75S3.08,66.87,3.08,144.74"/>
+  <g>
+    <text class="cls-2" transform="translate(39.09 286.99)"><tspan x="0" y="0">k</tspan></text>
+    <path class="cls-1" d="M212.63,42.2c6.57,0,12.17,2.33,16.82,6.98,4.65,4.65,6.98,10.26,6.98,16.82s-2.33,12.17-6.98,16.82c-4.65,4.65-10.26,6.98-16.82,6.98s-12.17-2.32-16.82-6.98c-4.65-4.65-6.98-10.26-6.98-16.82s2.32-12.17,6.98-16.82c4.65-4.65,10.26-6.98,16.82-6.98Z"/>
+  </g>
+  <circle class="cls-3" cx="168.26" cy="132.28" r="81.12"/>
+</svg>
