@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import KruxiaLogo from './KruxiaLogo';
+import { focusContactName } from '@/lib/focusContact';
 
 const navLinks = [
   { label: 'The Problem', href: '#problem' },
@@ -9,12 +10,6 @@ const navLinks = [
   { label: 'Industries', href: '#industries' },
   { label: 'Why Kruxia', href: '#why-kruxia' },
 ];
-
-const focusContactName = () => {
-  setTimeout(() => {
-    document.getElementById('contact-name')?.focus();
-  }, 600);
-};
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

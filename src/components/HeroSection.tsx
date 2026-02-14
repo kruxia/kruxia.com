@@ -1,5 +1,6 @@
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { focusContactName } from '@/lib/focusContact';
 
 const HeroSection = () => (
   <section className="bg-dark-section relative overflow-hidden pt-16">
@@ -32,6 +33,7 @@ const HeroSection = () => (
         <div className="flex flex-col sm:flex-row gap-4 mb-14">
           <a
             href="#contact"
+            onClick={focusContactName}
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-base font-semibold text-accent-foreground hover:brightness-110 transition-all hover:-translate-y-0.5 shadow-xl shadow-accent/30"
           >
             Talk to Us <ArrowRight size={18} />

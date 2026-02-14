@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Building2, Briefcase, Factory, Truck, Check } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+import { focusContactName } from '@/lib/focusContact';
 
 const useCases = [
   {
@@ -146,6 +147,7 @@ const UseCasesSection = () => {
                 </ul>
                 <a
                   href="#contact"
+                  onClick={focusContactName}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:underline"
                 >
                   {current.cta} &rarr;
@@ -174,7 +176,7 @@ const UseCasesSection = () => {
 
           <p className="text-center text-muted-foreground mt-8">
             Don't see your industry? We probably cover it.{' '}
-            <a href="#contact" className="text-accent font-semibold hover:underline">Get in touch</a>.
+            <a href="#contact" onClick={focusContactName} className="text-accent font-semibold hover:underline">Get in touch</a>.
           </p>
         </AnimatedSection>
       </div>
