@@ -10,9 +10,9 @@ const processes = [
     description:
       'We extract data from PDF invoices, validate against purchase orders, and auto-approve matches — routing exceptions to a human reviewer with the discrepancy highlighted.',
     stats: [
-      { value: '$0.18', label: 'Cost per invoice' },
-      { value: '15 min', label: 'Saved per invoice' },
-      { value: '98.5%', label: 'Auto-approved' },
+      { before: '$12.50', value: '$0.18', label: 'Cost per invoice' },
+      { before: '15 min', value: 'seconds', label: 'Processing time' },
+      { value: '90%', label: 'Auto-approved' },
     ],
   },
   {
@@ -23,7 +23,7 @@ const processes = [
     description:
       'Our system analyzes POs against company policies, auto-approves routine orders from known vendors, and escalates exceptions with a plain-English explanation of the flag.',
     stats: [
-      { value: '2–3 days', label: 'Approval cycle' },
+      { before: '1–3 weeks', value: '1–2 days', label: 'Approval cycle' },
       { value: '70%', label: 'Auto-approved' },
     ],
   },
@@ -35,8 +35,8 @@ const processes = [
     description:
       'We evaluate refund requests using purchase history, sentiment analysis, and policy rules. Clear-cut cases are handled instantly. Edge cases are flagged with a confidence score.',
     stats: [
-      { value: '< 30s', label: 'Response time' },
-      { value: '$0.12', label: 'Cost per decision' },
+      { before: '~8 hrs', value: '< 30s', label: 'Response time' },
+      { before: '$5–$12', value: '$0.12', label: 'Cost per decision' },
     ],
   },
   {
@@ -47,7 +47,7 @@ const processes = [
     description:
       'Automate document collection, compliance verification, and account setup. Every step is tracked, every handoff is automatic, and nothing falls through the cracks.',
     stats: [
-      { value: '80%', label: 'Less manual work' },
+      { value: '80%', label: 'Less paperwork' },
       { value: '100%', label: 'Audit trail' },
     ],
   },
@@ -86,9 +86,20 @@ const ProcessUseCasesSection = () => (
               <div className="flex gap-6 pt-4 border-t border-border">
                 {proc.stats.map((stat) => (
                   <div key={stat.label}>
-                    <div className="font-heading text-xl font-extrabold text-foreground tracking-tight">
-                      {stat.value}
-                    </div>
+                    {stat.before ? (
+                      <div className="flex items-baseline gap-2">
+                        <span className="font-heading text-base font-extrabold text-destructive/50 line-through decoration-destructive/40 tracking-tight">
+                          {stat.before}
+                        </span>
+                        <span className="font-heading text-base font-extrabold text-success tracking-tight">
+                          {stat.value}
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="font-heading text-xl font-extrabold text-foreground tracking-tight">
+                        {stat.value}
+                      </div>
+                    )}
                     <div className="text-[0.7rem] font-semibold uppercase tracking-wide text-muted-foreground">
                       {stat.label}
                     </div>
