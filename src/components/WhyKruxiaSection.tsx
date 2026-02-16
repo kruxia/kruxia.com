@@ -8,6 +8,16 @@ const trustPoints = [
   { icon: Server, metric: 'Runs Anywhere', desc: 'So efficient it runs on a $15 mini-computer. No expensive infrastructure required.' },
 ];
 
+const industries = [
+  'Health Insurance',
+  'Marketing Services',
+  'Publishing',
+  'Retail Supply Chain',
+  'Think Tanks',
+  'Nonprofit',
+  'Startups',
+];
+
 const WhyKruxiaSection = () => (
   <section id="why-kruxia" className="bg-dark-section section-padding">
     <div className="container-narrow">
@@ -20,7 +30,7 @@ const WhyKruxiaSection = () => (
             We Don't Just Advise. We Build and Deploy.
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mb-4">
-            Kruxia is a consultancy, not a software vendor. We build solutions on open-source technology so you own every line. Operating since 2014, we created <a href="https://kruxiaflow.com" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">Kruxia Flow</a> — the AI workflow engine — and we deploy it for our clients.
+            Kruxia builds solutions on open-source so <span className="font-bold text-white/90">you own your technology</span> with no vendor lock-in. Operating since 2014, we've built production systems for health insurers, publishers, retail suppliers, marketing services firms, and data science startups. That experience is why we created <a href="https://kruxiaflow.com" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">Kruxia Flow</a> — the AI workflow engine — and why we deploy it for our clients.
           </p>
           <p className="text-white/70 text-lg leading-relaxed mb-10">
             When you work with us, you get the team that built the technology, not a reseller reading documentation.
@@ -41,6 +51,17 @@ const WhyKruxiaSection = () => (
                 <p className="text-sm text-white/60 leading-relaxed">{tp.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8">
+            <p className="text-xs font-bold tracking-widest uppercase text-white/40 mb-3">Industries We've Served</p>
+            <div className="flex flex-wrap gap-2">
+              {industries.map((industry) => (
+                <span key={industry} className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-white/70">
+                  {industry}
+                </span>
+              ))}
+            </div>
           </div>
         </AnimatedSection>
       </div>

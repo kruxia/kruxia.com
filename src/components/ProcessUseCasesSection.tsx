@@ -8,7 +8,7 @@ const processes = [
     iconColor: 'text-accent',
     title: 'Invoice Processing',
     description:
-      'AI extracts data from PDF invoices, validates against purchase orders, and auto-approves matches — routing exceptions to a human reviewer with the discrepancy highlighted.',
+      'We extract data from PDF invoices, validate against purchase orders, and auto-approve matches — routing exceptions to a human reviewer with the discrepancy highlighted.',
     stats: [
       { value: '$0.18', label: 'Cost per invoice' },
       { value: '15 min', label: 'Saved per invoice' },
@@ -21,7 +21,7 @@ const processes = [
     iconColor: 'text-secondary',
     title: 'Purchase Order Routing',
     description:
-      'AI analyzes POs against company policies, auto-approves routine orders from known vendors, and escalates exceptions with a plain-English explanation of the flag.',
+      'Our system analyzes POs against company policies, auto-approves routine orders from known vendors, and escalates exceptions with a plain-English explanation of the flag.',
     stats: [
       { value: '2–3 days', label: 'Approval cycle' },
       { value: '70%', label: 'Auto-approved' },
@@ -33,7 +33,7 @@ const processes = [
     iconColor: 'text-warning',
     title: 'Refund Decisions',
     description:
-      'AI evaluates refund requests using purchase history, sentiment analysis, and policy rules. Clear-cut cases are handled instantly. Edge cases are flagged with a confidence score.',
+      'We evaluate refund requests using purchase history, sentiment analysis, and policy rules. Clear-cut cases are handled instantly. Edge cases are flagged with a confidence score.',
     stats: [
       { value: '< 30s', label: 'Response time' },
       { value: '$0.12', label: 'Cost per decision' },

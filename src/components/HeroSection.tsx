@@ -20,14 +20,14 @@ const HeroSection = () => (
       >
         <span className="inline-flex items-center gap-2 text-accent font-semibold text-sm tracking-wide uppercase mb-6">
           <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-          AI Automation for Your Business
+          Expert Business Automation
         </span>
         <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.08] tracking-tight mb-6 text-primary-foreground">
           Your business runs on processes.{' '}
-          <span className="text-gradient-accent">Let AI run them for you.</span>
+          <span className="text-gradient-accent">Kruxia automates them with AI you control.</span>
         </h1>
         <p className="text-lg sm:text-xl text-primary-foreground/70 max-w-lg mb-10 leading-relaxed">
-          Kruxia helps small and mid-size businesses implement AI workflow automation that saves time, controls costs, and never drops the ball. We handle the technology — you see the results.
+          Kruxia designs and manages AI-powered automation for small and mid-size businesses: invoice routing, contract review, compliance checks, approval chains. Our team builds, tests, and monitors every workflow — so you get the savings without the risk. We handle the AI. You see the results.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-14">

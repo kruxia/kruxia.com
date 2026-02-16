@@ -33,7 +33,7 @@ const ContactSection = () => {
               Ready to Stop Losing Money to Manual Processes?
             </h2>
             <p className="text-white/70 text-lg leading-relaxed mb-6">
-              Tell us about your business and the processes that keep you up at night. We'll show you what AI automation can do — with real numbers.
+              Tell us about your business and the processes that keep you up at night. We'll show you what we can do for you — with real numbers.
             </p>
             <div className="space-y-3 mt-8">
               {[

@@ -50,7 +50,7 @@ const useCases = [
     label: 'Manufacturing',
     headline: 'Compliance documentation that writes itself',
     description:
-      'Manufacturing companies face $29,100 per employee in regulatory costs. OSHA, ISO, FDA — the documentation burden is enormous. AI workflows automate the creation, tracking, and auditing of compliance documentation with an immutable record.',
+      'Manufacturing companies face $29,100 per employee in regulatory costs. OSHA, ISO, FDA — the documentation burden is enormous. We automate the creation, tracking, and auditing of compliance documentation with an immutable record.',
     highlights: [
       'Automated quality documentation with AI-powered analysis',
       'Supplier management workflows across ERP and MES',
@@ -70,7 +70,7 @@ const useCases = [
     label: 'Distribution',
     headline: 'Auto-approve the routine, escalate the exceptions',
     description:
-      'Distribution companies process thousands of purchase orders, invoices, and vendor interactions monthly. Most are routine. AI handles the bulk that follow the rules while routing exceptions to the right person instantly.',
+      'Distribution companies process thousands of purchase orders, invoices, and vendor interactions monthly. Most are routine. We handle the bulk that follow the rules while routing exceptions to the right person instantly.',
     highlights: [
       'Auto-approve routine POs from known vendors within policy',
       'AI-powered invoice matching with discrepancy detection',

@@ -20,7 +20,7 @@ const problems = [
   {
     icon: Bot,
     title: 'AI Pilots Stall Before Going Live',
-    desc: 'Most AI projects never reach production — often because costs spiral without controls. Without budget enforcement and visibility, automation becomes more expensive than the manual process.',
+    desc: 'Most AI projects never reach production — often because costs spiral without controls. Without experienced guidance and cost controls, automation becomes more expensive than the manual process.',
   },
 ];
 

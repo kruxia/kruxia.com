@@ -11,7 +11,7 @@ const features = [
   {
     icon: Brain,
     title: 'Make Smarter Decisions, Faster',
-    desc: 'AI analyzes contracts in seconds instead of hours. Exceptions route to the right person automatically. Low-risk items auto-approve while complex cases get human judgment.',
+    desc: 'Our workflows analyze contracts in seconds instead of hours. Exceptions route to the right person automatically. Low-risk items auto-approve while complex cases get human judgment.',
     proof: 'Approvals in days, not weeks',
   },
   {
@@ -30,7 +30,7 @@ const SolutionSection = () => (
           <span className="w-1.5 h-1.5 bg-accent rounded-full" /> How We Help
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-          AI Workflows That Actually Work
+          Automation That Actually Works
         </h2>
         <p className="text-muted-foreground text-lg">
           We automate your operations with cost controls, crash recovery, and audit trails built in.
