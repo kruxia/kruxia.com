@@ -33,7 +33,7 @@ const SolutionSection = () => (
           Automation That Actually Works
         </h2>
         <p className="text-muted-foreground text-lg">
-          We automate your operations with cost controls, crash recovery, and audit trails built in.
+          Intelligent automation for your operations — with cost controls, crash recovery, and audit trails built in.
         </p>
       </AnimatedSection>
 

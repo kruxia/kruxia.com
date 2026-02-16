@@ -30,7 +30,7 @@ const WhyKruxiaSection = () => (
             We Don't Just Advise. We Build and Deploy.
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mb-4">
-            Kruxia builds solutions on open-source so <span className="font-bold text-white/90">you own your technology</span> with no vendor lock-in. Operating since 2014, we've built production systems for health insurers, publishers, retail suppliers, marketing services firms, and data science startups. That experience is why we created <a href="https://kruxiaflow.com" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">Kruxia Flow</a> — the AI workflow engine — and why we deploy it for our clients.
+            Kruxia builds solutions on open-source so <span className="font-bold text-white/90">you own your technology</span> with no vendor lock-in. Operating since 2014, we've built production systems for health insurers, publishers, retail suppliers, marketing services firms, and data science startups. That experience is why we created <a href="https://kruxiaflow.com" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">Kruxia Flow</a> — our intelligent automation engine — and why we deploy it for our clients.
           </p>
           <p className="text-white/70 text-lg leading-relaxed mb-10">
             When you work with us, you get the team that built the technology, not a reseller reading documentation.

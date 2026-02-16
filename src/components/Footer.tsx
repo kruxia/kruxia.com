@@ -11,7 +11,7 @@ const Footer = () => (
             <span className="font-heading font-bold text-lg">Kruxia</span>
           </div>
           <p className="text-sm text-white/50 leading-relaxed mb-4">
-            Expert AI implementation for small &amp; mid-sized businesses.
+            Expert intelligent automation for small &amp; mid-sized businesses.
           </p>
           <p className="text-xs text-white/30">© 2014–2026 Kruxia Corp</p>
         </div>

@@ -12,7 +12,7 @@ const NewsletterSection = () => {
             Get the Kruxia Newsletter
           </h2>
           <p className="text-muted-foreground mb-8">
-            Practical AI automation strategies, real cost breakdowns, and use cases you can act on. No hype, no fluff — just what works. Published weekly.
+            Practical intelligent automation strategies, real cost breakdowns, and use cases you can act on. No hype, no fluff — just what works. Published weekly.
           </p>
 
           <div className="flex justify-center">
