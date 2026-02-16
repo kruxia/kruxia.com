@@ -83,24 +83,24 @@ const ProcessUseCasesSection = () => (
               <p className="text-sm text-muted-foreground leading-relaxed mb-5 flex-1">
                 {proc.description}
               </p>
-              <div className="flex gap-6 pt-4 border-t border-border">
+              <div className="flex gap-6 pt-4 border-t border-border items-end">
                 {proc.stats.map((stat) => (
-                  <div key={stat.label}>
+                  <div key={stat.label} className="flex flex-col justify-end">
                     {stat.before ? (
-                      <div className="flex items-baseline gap-2">
-                        <span className="font-heading text-base font-extrabold text-destructive/50 line-through decoration-destructive/40 tracking-tight">
+                      <>
+                        <div className="font-heading text-base font-extrabold text-destructive/50 line-through decoration-destructive/40 tracking-tight leading-tight">
                           {stat.before}
-                        </span>
-                        <span className="font-heading text-base font-extrabold text-success tracking-tight">
+                        </div>
+                        <div className="font-heading text-base font-extrabold text-success tracking-tight leading-tight">
                           {stat.value}
-                        </span>
-                      </div>
+                        </div>
+                      </>
                     ) : (
                       <div className="font-heading text-xl font-extrabold text-foreground tracking-tight">
                         {stat.value}
                       </div>
                     )}
-                    <div className="text-[0.7rem] font-semibold uppercase tracking-wide text-muted-foreground">
+                    <div className="text-[0.7rem] font-semibold uppercase tracking-wide text-muted-foreground mt-0.5">
                       {stat.label}
                     </div>
                   </div>
