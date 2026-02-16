@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Building2, Briefcase, Factory, Truck, Check } from 'lucide-react';
+import { Building2, ShieldPlus, Briefcase, Factory, Truck, Check } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import { focusContactName } from '@/lib/focusContact';
 
@@ -23,6 +23,28 @@ const useCases = [
     statBody:
       '64% are planning AI investments this year. The firms that move to production workflows first will have a compounding advantage. We bridge the gap between experiments and reliable, auditable automation.',
     statSource: 'Intuit QuickBooks Accountant Technology Survey, 2025',
+    statSourceUrl: 'https://quickbooks.intuit.com/r/news/intuit-quickbooks-tech-survey/',
+  },
+  {
+    id: 'health-insurance',
+    icon: ShieldPlus,
+    label: 'Health Insurance',
+    headline: 'Claims processing, prior auth, and compliance — streamlined',
+    description:
+      'Health insurers spend billions on administrative overhead: claims adjudication, prior authorization, member enrollment, provider credentialing. We automate the document-heavy, multi-step workflows that consume your operations team — with the audit trails your regulators require.',
+    highlights: [
+      'Automated claims intake, validation, and routing with full audit trail',
+      'Prior authorization processing with policy-based auto-decisions',
+      'Member enrollment document verification and onboarding workflows',
+      'Regulatory compliance documentation with immutable records',
+    ],
+    cta: 'Talk to Us About Health Insurance Automation',
+    statNumber: '$20B',
+    statHeadline: 'in savings available from automating admin transactions',
+    statBody:
+      'The health insurance industry spends $90 billion a year on routine administrative tasks. The gap between manual and automated workflows represents $20 billion in unrealized savings — across eligibility checks, claims processing, prior authorizations, and remittance. We close that gap with workflows built for compliance from day one.',
+    statSource: 'CAQH Index, 2024',
+    statSourceUrl: 'https://www.caqh.org/blog/new-caqh-index-reveals-20b-savings-opportunity-to-cut-waste-reduce-costs-and-improve-patient-access',
   },
   {
     id: 'services',
@@ -43,6 +65,7 @@ const useCases = [
     statBody:
       'AI contract review takes seconds. Combine that with automated approval routing and billing integration, and weeks of manual work collapse into days — so your team focuses on client delivery, not paperwork.',
     statSource: 'LegalOn 2025 In-House Legal Technology Survey',
+    statSourceUrl: 'https://www.legalontech.com/press-releases/2025-survey',
   },
   {
     id: 'manufacturing',
@@ -63,6 +86,7 @@ const useCases = [
     statBody:
       'AI-powered compliance workflows cut audit preparation time dramatically while maintaining bulletproof records. Automate the documentation burden so your team focuses on production.',
     statSource: 'National Association of Manufacturers (NAM)',
+    statSourceUrl: 'https://nam.org/regulatory-onslaught-costing-small-manufacturers-more-than-50000-per-employee-29236/',
   },
   {
     id: 'distribution',
@@ -83,6 +107,7 @@ const useCases = [
     statBody:
       'Automation eliminates manual data entry and approval bottlenecks. Your team stops spending their day on purchase orders that follow the same rules every time and focuses on the exceptions that matter.',
     statSource: 'National Association of Wholesaler-Distributors (NAW)',
+    statSourceUrl: 'https://www.naw.org/4-automated-order-processing-benefits-for-manufacturers-and-distributors/',
   },
 ];
 
@@ -101,7 +126,7 @@ const UseCasesSection = () => {
             Built for How Your Business Actually Works
           </h2>
           <p className="text-muted-foreground text-lg">
-            Whether you're in accounting, professional services, manufacturing, or distribution — we've mapped the automation opportunities in your industry.
+            Whether you're in accounting, health insurance, professional services, manufacturing, or distribution — we've mapped the automation opportunities in your industry.
           </p>
         </AnimatedSection>
 
@@ -167,7 +192,11 @@ const UseCasesSection = () => {
                 </p>
                 {current.statSource && (
                   <p className="text-xs text-muted-foreground/60 mt-4 pt-3 border-t border-primary/10">
-                    *{current.statSource}
+                    *{current.statSourceUrl ? (
+                      <a href={current.statSourceUrl} target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors underline decoration-muted-foreground/30 underline-offset-2">
+                        {current.statSource}
+                      </a>
+                    ) : current.statSource}
                   </p>
                 )}
               </div>
