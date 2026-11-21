@@ -74,7 +74,7 @@ const HeroSection = () => (
 
         {/* Floating badges */}
         <div className="hidden sm:block absolute -top-4 -right-4 z-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-2.5 shadow-lg text-sm font-bold text-primary-foreground animate-hero-float">
-          ↓ <span className="text-success">98%</span> invoice cost reduction
+          ↓ <span className="text-success">~98%</span> estimated cost reduction
         </div>
         <div className="hidden sm:block absolute -bottom-3 -left-4 z-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-2.5 shadow-lg text-sm font-bold text-primary-foreground animate-hero-float-delayed">
           ↻ Auto-recovery built in
@@ -87,7 +87,7 @@ const HeroSection = () => (
 
           <div className="flex justify-between items-center mb-5 pb-4 border-b border-white/[0.08]">
             <span className="font-heading text-lg font-bold">Invoice Processing</span>
-            <span className="text-[0.7rem] font-bold tracking-wide uppercase text-accent bg-accent/15 px-3 py-1 rounded-full">Live</span>
+            <span className="text-[0.7rem] font-bold tracking-wide uppercase text-accent bg-accent/15 px-3 py-1 rounded-full">Example</span>
           </div>
 
           <div className="grid grid-cols-2 gap-4 mb-4">
@@ -96,13 +96,13 @@ const HeroSection = () => (
               <div className="font-heading text-3xl font-extrabold tracking-tight text-white/30 line-through decoration-destructive">$12.50</div>
             </div>
             <div>
-              <div className="text-[0.7rem] font-semibold tracking-widest uppercase text-white/40 mb-1">With Kruxia</div>
+              <div className="text-[0.7rem] font-semibold tracking-widest uppercase text-white/40 mb-1">With Kruxia (est.)</div>
               <div className="font-heading text-3xl font-extrabold tracking-tight text-success">$0.18</div>
             </div>
           </div>
 
           <div className="inline-flex items-center gap-1.5 text-xs font-bold text-success bg-success/10 rounded-lg px-3 py-1.5 mb-5">
-            ▼ $12.32 saved per invoice
+            ▼ About $12 saved per invoice (est.)
           </div>
 
           <div className="flex flex-col gap-2">
@@ -122,6 +122,10 @@ const HeroSection = () => (
               <span className="ml-auto text-xs font-semibold text-success font-heading">$0.05</span>
             </div>
           </div>
+
+          <p className="mt-4 text-[0.7rem] leading-relaxed text-white/40">
+            An illustration. The manual cost is an industry benchmark. The Kruxia cost is our estimate and has not yet been measured on client work.
+          </p>
         </div>
       </motion.div>
     </div>

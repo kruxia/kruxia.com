@@ -12,7 +12,7 @@ const NewsletterSection = () => {
             Get the Kruxia Newsletter
           </h2>
           <p className="text-muted-foreground mb-8">
-            Practical intelligent automation strategies, real cost breakdowns, and use cases you can act on. No hype, no fluff — just what works. Published weekly.
+            Practical intelligent automation strategies, real cost breakdowns, and use cases you can act on. No hype, no fluff — just what works.
           </p>
 
           <div className="flex justify-center">
@@ -27,7 +27,7 @@ const NewsletterSection = () => {
           </div>
 
           <p className="text-xs text-muted-foreground mt-4">
-            Free, weekly. Unsubscribe anytime.
+            Free. Unsubscribe anytime.
           </p>
         </AnimatedSection>
       </div>
