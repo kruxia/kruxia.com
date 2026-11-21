@@ -23,7 +23,6 @@ const Footer = () => (
             <li><a href="#why-kruxia" className="hover:text-white transition-colors">About</a></li>
             <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             <li><a href="https://kruxia.substack.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Newsletter</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
           </ul>
         </div>
 
@@ -43,9 +42,7 @@ const Footer = () => (
           <h4 className="font-semibold text-sm mb-4 text-white/80">Connect</h4>
           <ul className="space-y-2.5 text-sm text-white/50">
             <li><a href="https://bsky.app/profile/kruxia.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Bluesky</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
             <li><a href="https://kruxia.substack.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Substack</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Discord</a></li>
           </ul>
         </div>
       </div>

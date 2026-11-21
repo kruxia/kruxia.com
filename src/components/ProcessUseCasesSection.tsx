@@ -110,6 +110,10 @@ const ProcessUseCasesSection = () => (
           </AnimatedSection>
         ))}
       </div>
+
+      <p className="text-center text-sm text-muted-foreground mt-8 max-w-2xl mx-auto">
+        About these figures: the manual figures are industry benchmarks. The Kruxia figures are estimates and targets from our research and workflow design. They have not yet been measured on client work.
+      </p>
     </div>
   </section>
 );
